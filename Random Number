@@ -1,0 +1,13 @@
+import random
+
+# Randomly pick a number from 1 to 6
+random_number = random.randint(1, 6)
+
+# Ask the user to pick a number from 1 to 6
+user_guess = int(input("Pick a number from 1 to 6: "))
+
+# Check if the user's guess is correct
+if user_guess == random_number:
+    print("Congratulations! You guessed the correct number.")
+else:
+    print(f"Sorry, you guessed wrong. The correct number was {random_number}.")
